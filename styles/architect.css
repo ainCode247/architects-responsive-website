@@ -11,6 +11,9 @@
 .display-flex{
     display: flex;
 }
+.text-primary{
+    color: #FF900E;
+}
 .text-gray{
     color: #424242;
 }
@@ -30,6 +33,17 @@
     border: none;
 }
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 /* Header Styles */
 
 /* navber related styles */
@@ -68,10 +82,47 @@
 .banner-image{
     width: 100%;
 }
+/* team and features related styles */
+
+.teams{
+    align-items: center;
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.team-feature{
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+#quick-list{
+    font-weight: 500;
+}
 /* first resposive media Query */
 @media screen and (max-width: 576px) {
     .navber,
+    .teams,
     .nav-link{
         flex-direction: column;
+    }
+
+    .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-feature{
+        margin-left: 20px;
+    }
+}
+/* medioum size device */
+
+@media screen and (min-width:577) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .team-feature{
+        margin-left: 50px;
     }
 }
