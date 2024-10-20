@@ -123,6 +123,23 @@ main > section{
     margin-bottom: 0px; 
 }
 
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-years{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.feature-arcitact img{
+    width: 100%;
+}
+
 /* some fact related styles */
 .fact-container{
     display: grid;
@@ -175,6 +192,8 @@ main > section{
 @media screen and (max-width: 576px) {
     .navber,
     .teams,
+    .features,
+    feature-arcitact,
     .nav-link{
         flex-direction: column;
     }
@@ -198,6 +217,10 @@ main > section{
     .sponsonrs-companyes{
         justify-items: center;
         gap: 30px;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
 /* medioum size device */
